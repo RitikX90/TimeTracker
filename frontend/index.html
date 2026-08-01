@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .hidden { display: none; }
+        #error-message { color: red; }
+    </style>
+</head>
+<body>
+    <h1>Study Tracker</h1>
+    <section>
+        <h2>Current Session</h2>
+
+        <!-- Visible when a session is active -->
+        <div id="active-session">
+        </div>
+
+        <!-- Visible when NO session is active -->
+        <div id="no-active-session">
+        </div>
+
+        
+
+    </section>
+    <section id="start-session-section">
+        <h2>Start new session</h2>
+        <div>
+            <label for="subject">Subject</label>
+            <input type="text" id="subject">
+        </div>
+        <div>
+            <label for="notes">Notes</label> 
+            <textarea name="notes" row="4" id="notes"></textarea>
+        </div>
+        <!-- <button id="start-btn" type="button">Start Session</button> -->
+        <button id="start-btn" type="button">Start Session</button>
+
+    </section>
+    <section>
+        <h2>Today's Overview</h2>
+        <p>Sessions Today:
+            <span id="today-count"></span>
+        </p>
+        <p>Total Time:
+            <span id="today-total"></span>
+        </p>
+
+
+    </section>
+    <section>
+        <h2>History</h2>
+        <ul id="history-list">
+        </ul>
+    </section>
+    <script type="module" src="app.js"></script>
+</body>
+</html>
